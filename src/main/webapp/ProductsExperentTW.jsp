@@ -7,6 +7,10 @@
 	import="jakartaEEdataStructureProduct.service.ProductArrayListService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +31,9 @@
 			//System.out.println("CODE PRODUCT --->   " + product.getCode() + "   NAME PRODUCT " + product.getName());
 		%>
 		<tr>
-			<td><%=product.getCode()%></td>
-			<td><%=product.getName()%></td>
+
+			<td>${product.code}</td>
+			<td>${product.name}</td>
 		</tr>
 
 		<%
@@ -47,8 +52,8 @@
 	<%
 	if ("POST".equals(request.getMethod())) {
 		String codeProduct = request.getParameter("product_code");
-		
-		if ( codeProduct == null  || codeProduct.trim().isEmpty() ) {
+
+		if (codeProduct == null || codeProduct.trim().isEmpty()) {
 	%>
 	<div Style="color: red; font-size: 18px">codeProduct should not
 		be empty</div>
