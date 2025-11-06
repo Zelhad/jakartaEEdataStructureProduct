@@ -22,10 +22,11 @@
 		<%
 		ProductArrayListService productArrayListService = new ProductArrayListService();
 		List<Product> products = productArrayListService.listAllProducts();
+		
 		for (Product product : products) {
-			System.out.println("CODE PRODUCT --->   " + product.getCode() + "   NAME PRODUCT " + product.getName());
+			//System.out.println("CODE PRODUCT --->   " + product.getCode() + "   NAME PRODUCT " + product.getName());
 		%>
-		<tr>
+		<tr >
 			<td><%=product.getCode()%></td>
 			<td><%=product.getName()%></td>
 		</tr>
@@ -35,5 +36,53 @@
 		%>
 
 	</table>
+
+
+	<h1>*************************FIND product ****************</h1>
+	<form method="post" action="">
+		<label for="product_code"> PRODUCT CODE :</label> <input type="text"
+			name="product_code" id="product_code" /> <input type="submit"
+			value="Check" />
+	</form>
+	<%
+	if ("POST".equals(request.getMethod())) {
+		String codeProduct = request.getParameter("product_code");
+		if (codeProduct.isEmpty() || codeProduct == null) {
+	%>
+	<div Style="color: red; font-size: 18px">codeProduct should not
+		be empty</div>
+	<%
+	} else {
+	Product product = productArrayListService.findProduct(codeProduct);
+
+	if (product.getCode() != null) {
+	%>
+	<table>
+		<tr>
+			<td><%=product.getName()%></td>
+			<td><%=product.getCode()%></td>
+		</tr>
+	</table>
+	<%
+	} else {
+	%>
+	<div style="border: 1px solid red; color: red;">code not found</div>
+	<%
+	}
+
+	}
+
+	}
+	%>
+	<h1>Add product  to ArrayList via JSP</h1>
+	<form method ="post" action ="">
+	<label for="code">CODE PRODUCT </label><input type ="text" name ="code" id ="code" />
+	<label for="name"> PRODUCT NAME </label><input type ="text" name ="name" id ="name" />
+	<input type ="submit" value ="add product " name ="addToArrayList"/>
+
+
+	
+	</form>
 </body>
+
 </html>
