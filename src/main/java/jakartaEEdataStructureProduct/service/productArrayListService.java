@@ -5,7 +5,7 @@ import java.util.List;
 
 import jakartaEEdataStructureProduct.model.Product;
 
-public class productArrayListService {
+public class ProductArrayListService {
 	// Empty ArrayList
 	List<Product> products = new ArrayList<>();
 	// add some data
@@ -13,7 +13,7 @@ public class productArrayListService {
 	private Product product2 = new Product("CODEPRODUCT1001213", "MOBILS");
 	private Product product3 = new Product("CODEPRODUCT1001214", "ELECTRONICS");
 
-	public productArrayListService() {
+	public ProductArrayListService() {
 		this.products.add(product1);
 		this.products.add(product2);
 		this.products.add(product3);
@@ -27,19 +27,18 @@ public class productArrayListService {
 	// find a product by criteria (code
 	public Product findProduct(String code) {
 		Product product = new Product();
-		boolean found = false ;
+		boolean found = false;
 		if (code != "" && !code.isEmpty()) {
 			for (Product prd : products) {
-				if(prd.getCode().equals(code)) {
-					
+				if (prd.getCode().equals(code)) {
+
 					product.setCode(prd.getCode());
 					product.setName(prd.getName());
 					found = true;
 				}
 
-
 			}
-			if(found == false ) {
+			if (found == false) {
 				System.out.println("the code not found");
 			}
 		}
