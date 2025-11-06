@@ -7,8 +7,6 @@
 	import="jakartaEEdataStructureProduct.service.ProductArrayListService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -18,15 +16,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table>
+	
+	
+	<!--  
 		<tr>
 			<th>PRODUCT CODE</th>
 			<th>PRODUCT NAME</th>
 		</tr>
+		<%--  
 		<%
 		ProductArrayListService productArrayListService = new ProductArrayListService();
 		List<Product> products = productArrayListService.listAllProducts();
-
+System.out.println("testtttttttttttttttttttt");
 		for (Product product : products) {
 			//System.out.println("CODE PRODUCT --->   " + product.getCode() + "   NAME PRODUCT " + product.getName());
 		%>
@@ -39,9 +40,10 @@
 		<%
 		}
 		%>
+		--%>
+-->
 
-	</table>
-
+<!--  
 
 	<h1>*************************FIND product ****************</h1>
 	<form method="post" action="">
@@ -49,6 +51,8 @@
 			name="product_code" id="product_code" /> <input type="submit"
 			value="Check" />
 	</form>
+	-->
+	<%-- 
 	<%
 	if ("POST".equals(request.getMethod())) {
 		String codeProduct = request.getParameter("product_code");
@@ -80,6 +84,7 @@
 
 	}
 	%>
+	<!-- 
 	<h1>Add product to ArrayList via JSP</h1>
 	<form method="post" action="">
 		<label for="code">CODE PRODUCT </label><input type="text" name="code"
@@ -90,6 +95,8 @@
 
 
 	</form>
+	-->
 </body>
 
+--%>
 </html>
