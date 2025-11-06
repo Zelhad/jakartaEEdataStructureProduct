@@ -22,11 +22,11 @@
 		<%
 		ProductArrayListService productArrayListService = new ProductArrayListService();
 		List<Product> products = productArrayListService.listAllProducts();
-		
+
 		for (Product product : products) {
 			//System.out.println("CODE PRODUCT --->   " + product.getCode() + "   NAME PRODUCT " + product.getName());
 		%>
-		<tr >
+		<tr>
 			<td><%=product.getCode()%></td>
 			<td><%=product.getName()%></td>
 		</tr>
@@ -47,7 +47,8 @@
 	<%
 	if ("POST".equals(request.getMethod())) {
 		String codeProduct = request.getParameter("product_code");
-		if (codeProduct.isEmpty() || codeProduct == null) {
+		
+		if ( codeProduct == null  || codeProduct.trim().isEmpty() ) {
 	%>
 	<div Style="color: red; font-size: 18px">codeProduct should not
 		be empty</div>
@@ -74,14 +75,15 @@
 
 	}
 	%>
-	<h1>Add product  to ArrayList via JSP</h1>
-	<form method ="post" action ="">
-	<label for="code">CODE PRODUCT </label><input type ="text" name ="code" id ="code" />
-	<label for="name"> PRODUCT NAME </label><input type ="text" name ="name" id ="name" />
-	<input type ="submit" value ="add product " name ="addToArrayList"/>
+	<h1>Add product to ArrayList via JSP</h1>
+	<form method="post" action="">
+		<label for="code">CODE PRODUCT </label><input type="text" name="code"
+			id="code" /> <label for="name"> PRODUCT NAME </label><input
+			type="text" name="name" id="name" /> <input type="submit"
+			value="add product " name="addToArrayList" />
 
 
-	
+
 	</form>
 </body>
 
