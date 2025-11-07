@@ -21,7 +21,8 @@
 	%>
 	<ul>
 		<c:forEach var="name" items="${names}">
-			<li>${name }</li>
+			<li style="color: orange;"><c:out value="${name}"
+					default="NO VALUE "></c:out></li>
 		</c:forEach>
 	</ul>
 	<h2>Loop over a an Object</h2>
@@ -32,7 +33,8 @@
 	%>
 	<ul>
 		<c:forEach var="product" items="${products}">
-			<li>${product.code}-${product.name}</li>
+			<li><c:out value="${product.code} "></c:out> ---- <c:out
+					value="${product.name} "></c:out></li>
 		</c:forEach>
 
 	</ul>
@@ -40,10 +42,16 @@
 	<c:forEach var="product" items="${products}" varStatus="loop">
 		<!-- curent  attribut  display the current instanse on the foreach  and the return type is PRODUCT  -->
 		<p>Access to CURRENT element :${loop.current}</p>
-		<p>CURRENT acess is the FIRST ? boolean return type :${loop.first}</p>
+		<c:out value ="${loop.current}" default="MO current Element "></c:out>
+		 CURRENT acess is the FIRST ? boolean return type  <c:out
+			value="${loop.first}"></c:out>
+
 		<p style="color: red;">LAST acess is the LAST ? boolean return
 			type :${loop.last}</p>
-		<p style="color: blue;">INDEX :${loop.index}</p>
+
+
+
+		<c:out value=" index >>>>>>>>>>>> ${loop.index} "></c:out>
 
 	</c:forEach>
 
@@ -51,8 +59,10 @@
 	<h2 style="color: lime;">Iterating using forEach with attribut
 		begin, end, step</h2>
 	<c:forEach var="product" items="${products}" begin="2" end="7" step="3">
-	<li>${product.code}</li>
-	<li>${product.name}</li>
+
+		<c:out value="${product.code} " default="no code !"></c:out>
+		<c:out value="${product.name} " default="no name !"></c:out>
+
 	</c:forEach>
 </body>
 </html>
