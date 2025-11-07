@@ -32,9 +32,27 @@
 	%>
 	<ul>
 		<c:forEach var="product" items="${products}">
-			<li>${product.code}- ${product.name}</li>
+			<li>${product.code}-${product.name}</li>
 		</c:forEach>
 
 	</ul>
+	<h3>Using varStatus attribut</h3>
+	<c:forEach var="product" items="${products}" varStatus="loop">
+		<!-- curent  attribut  display the current instanse on the foreach  and the return type is PRODUCT  -->
+		<p>Access to CURRENT element :${loop.current}</p>
+		<p>CURRENT acess is the FIRST ? boolean return type :${loop.first}</p>
+		<p style="color: red;">LAST acess is the LAST ? boolean return
+			type :${loop.last}</p>
+		<p style="color: blue;">INDEX :${loop.index}</p>
+
+	</c:forEach>
+
+	<!-- foreach using begin and end and step -->
+	<h2 style="color: lime;">Iterating using forEach with attribut
+		begin, end, step</h2>
+	<c:forEach var="product" items="${products}" begin="2" end="7" step="3">
+	<li>${product.code}</li>
+	<li>${product.name}</li>
+	</c:forEach>
 </body>
 </html>
