@@ -61,14 +61,15 @@ public class DatabaseConnection {
 
         }
     }
-    
+    /*
   
     public static void main(String[] args) {
         System.out.println("Testing database connection...");
         if (testConnection()) {
-            System.out.println("✅ Database connection test PASSED!");
+            System.out.println("Database connection test PASSED!");
         } else {
-            System.out.println("❌ Database connection test FAILED!");
+            System.out.println(" Database connection test FAILED!");
         }
     }
+    */
 }
