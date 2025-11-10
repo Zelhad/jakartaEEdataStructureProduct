@@ -1,5 +1,6 @@
 
 
+<%@page import="java.util.Arrays"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
 <%@page import="jakartaEEdataStructureProduct.model.Product"%>
@@ -7,7 +8,7 @@
 	import="jakartaEEdataStructureProduct.service.ProductArrayListService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html>
@@ -16,8 +17,60 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
-	
+	<h2>Product List</h2>
+	<%
+	List<String> names = Arrays.asList("Zouhair", "Souad", "Nadia");
+	request.setAttribute("names", names);
+	%>
+	<!-- Loop over the names using JSTL -->
+	<ul>
+		<c:forEach var="name" items = "${names} ">
+			<li>${name}</li>
+		</c:forEach>
+	</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!--  
 		<tr>
 			<th>PRODUCT CODE</th>
@@ -43,7 +96,7 @@ System.out.println("testtttttttttttttttttttt");
 		--%>
 -->
 
-<!--  
+	<!--  
 
 	<h1>*************************FIND product ****************</h1>
 	<form method="post" action="">

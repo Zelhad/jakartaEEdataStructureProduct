@@ -1,6 +1,7 @@
 <%@page
 	import="jakartaEEdataStructureProduct.service.ProductArrayListService"%>
 <%@page import="jakartaEEdataStructureProduct.model.Product"%>
+
 <%@page import="java.util.List"%>
 <%@page import="java.util.Arrays"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -64,5 +65,6 @@
 		<c:out value="${product.name} " default="no name !"></c:out>
 
 	</c:forEach>
+	<h2 style ="color :  tomato">Dealing with SET </h2>
 </body>
 </html>

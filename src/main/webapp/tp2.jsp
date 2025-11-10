@@ -139,6 +139,7 @@
 	
 	
 
+	<!-- CNRL SHIFT T TO OPEN ANY TYPE OF JAVA (classes, Interfaces) -->
 	
 
 
