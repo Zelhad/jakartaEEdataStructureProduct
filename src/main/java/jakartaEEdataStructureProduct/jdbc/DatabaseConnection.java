@@ -52,7 +52,7 @@ public class DatabaseConnection {
         Connection conn = null;
         try {
             conn = getConnection();
-            return conn != null && !conn.isClosed();  // Here isClosed() is correct
+            return conn != null && !conn.isClosed(); 
         } catch (SQLException e) {
             logger.severe("Connection test failed: " + e.getMessage());
             return false;
