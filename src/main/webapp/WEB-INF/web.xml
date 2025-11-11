@@ -11,4 +11,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.xhtml</welcome-file>
   </welcome-file-list>
+  <servlet>
+  <description>This controller  servlet to check the database connection</description>
+  <servlet-name>TestConnecionJDBCServlet</servlet-name>
+  <servlet-class>jakartaEEdataStructureProduct.servlets.TestConnecionJDBCServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>TestConnecionJDBCServlet</servlet-name>
+  <url-pattern>/testCox</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

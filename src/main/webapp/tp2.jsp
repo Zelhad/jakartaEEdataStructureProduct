@@ -26,8 +26,8 @@
 	<h2>Exercise 2 – c:forEach basic</h2>
 	<%
 	ProductArrayListService productArrayListService = new ProductArrayListService();
-	List<Product> products = productArrayListService.listAllProducts();
-	request.setAttribute("products", products);
+	//List<Product> products = productArrayListService.listAllProducts();
+	//request.setAttribute("products", products);
 	%>
 	<table>
 		<tr>

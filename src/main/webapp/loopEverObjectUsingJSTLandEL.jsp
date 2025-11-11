@@ -29,8 +29,8 @@
 	<h2>Loop over a an Object</h2>
 	<%
 	ProductArrayListService productArrayListService = new ProductArrayListService();
-	List<Product> products = productArrayListService.listAllProducts();
-	request.setAttribute("products", products);
+	//List<Product> products = productArrayListService.listAllProducts();
+	//request.setAttribute("products", products);
 	%>
 	<ul>
 		<c:forEach var="product" items="${products}">

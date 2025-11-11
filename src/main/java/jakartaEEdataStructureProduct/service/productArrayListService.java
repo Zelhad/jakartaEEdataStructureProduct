@@ -7,10 +7,11 @@ import jakartaEEdataStructureProduct.model.Product;
 
 public class ProductArrayListService {
 	// Empty ArrayList
-	List<Product> products = new ArrayList<>();
+//	List<Product> products = new ArrayList<>();
 	// add some data
-	private Product product1 = new Product("CODEPRODUCT1", "LAPTOPS");
-	private Product product2 = new Product("CODEPRODUCT1", "MOBILS");
+//	private Product product1 = new Product("CODEPRODUCT1", "LAPTOPS");
+//	private Product product2 = new Product("CODEPRODUCT1", "MOBILS");
+	/*
 	private Product product3 = new Product("CODEPRODUCT3", "ELECTRONICS");
 	private Product product4 = new Product("CODEPRODUCT4", "tOYS");
 	private Product product5 = new Product("CODEPRODUCT5", "CARS");
@@ -59,5 +60,6 @@ public class ProductArrayListService {
 		return product;
 
 	}
+	*/
 
 }

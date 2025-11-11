@@ -1,0 +1,438 @@
+[
+{
+    "id": "d06f36f0-e097-41df-8d18-048266c78650",
+    "href": "/api/productCatalogManagement/v4/productSpecification/d06f36f0-e097-41df-8d18-048266c78650",
+    "name": "Nilait Prisma 55UA5001S 55 LED UltraHD 4K Smart TV",
+    "description": "Dise�ada para reproducir hasta el m�s m�nimo detalle, presentamos la televisi�n Prisma 55UA5001S que convertir� tu sal�n en un escenario de entretenimiento ilimitado.",
+    "productNumber": "10465115",
+    "brand": "Nilait",
+    "productSpecCharacteristic": [
+        {
+            "name": "Color",
+            "description": ";LIST;LIST_CODE|color",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 1,
+            "maxCardinality": 1,
+            "extensible": true, 
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "Negro",
+                    "isDefault": true
+                }
+            ],
+            "id": "8d7432b5-f76f-4399-921a-a1d8169f257c",
+            "isVisible": true,
+            "isUnique": false
+        },
+        {
+            "name": "Conectividad",
+            "description": ";LIST_MULTIPLE_VALUES;LIST_CODE|conectividad",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 0,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "Bluetooth|Con cable",
+                    "isDefault": true
+                }
+            ],
+            "id": "63c0a22b-2668-491d-888b-91273aa1211d",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "Tecnolog�a de la pantalla",
+            "description": ";LIST;LIST_CODE|tecnologia_de_la_pantalla",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 0,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "QLED",
+                    "isDefault": true
+                }
+            ],
+            "id": "7f043111-4bbe-49fa-a596-5382796a4e48",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "Imagen4",
+            "description": ";MEDIA;TYPE|IMAGE,MAX_SIZE|10240",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 0,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "https://media-dev-eu-2.mirakl.net/SOURCE/96299bb965574d55989295694f5e46bc",
+                    "isDefault": true
+                }
+            ],
+            "id": "1c2caa3e-7147-4b62-af79-057b13bc4e8d",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "Imagen3",
+            "description": ";MEDIA;TYPE|IMAGE,MAX_SIZE|10240",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 1,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "https://media-dev-eu-2.mirakl.net/SOURCE/a92b5575c6494c36a35f00daa2b85834",
+                    "isDefault": true
+                }
+            ],
+            "id": "a9addd9e-d163-427b-b17c-b62b592aa325",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "Tama�o de la pantalla ('')",
+            "description": ";INTEGER;",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 0,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "55",
+                    "isDefault": true
+                }
+            ],
+            "id": "284e6218-fea7-4607-a230-e71a49cb921f",
+            "isVisible": true,
+            "isUnique": false
+        },
+        {
+            "name": "Formato HD",
+            "description": ";LIST;LIST_CODE|formato_hd",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 0,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "4K",
+                    "isDefault": true
+                }
+            ],
+            "id": "990335ba-ca44-41ae-b0d6-1a64ae1b09ea",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "Televisores",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "televisores",
+                    "isDefault": true
+                }
+            ],
+            "id": "categoria",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "Imagen2",
+            "description": ";MEDIA;TYPE|IMAGE,MAX_SIZE|10240",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 1,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "https://media-dev-eu-2.mirakl.net/SOURCE/eee23867c74249ec838c9665e9abbc6e",
+                    "isDefault": true
+                }
+            ],
+            "id": "c5928947-4997-4580-bfd8-78ad6753314e",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "Imagen1",
+            "description": ";MEDIA;TYPE|IMAGE,MAX_SIZE|10240",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 1,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "https://media-dev-eu-2.mirakl.net/SOURCE/531b48307f5946a3bedbea388547b9c6",
+                    "isDefault": true
+                }
+            ],
+            "id": "237d83b2-9879-4cbc-adcf-f1ae8c8fb137",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "Funcionalidad",
+            "description": ";LIST_MULTIPLE_VALUES;LIST_CODE|funcionalidad",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 0,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "3D",
+                    "isDefault": true
+                }
+            ],
+            "id": "51c42ef9-ad09-4e61-beec-aba4da7f348c",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "mirakl-restricted-selling",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [
+                {
+                    "valueType": "string",
+                    "value": "false",
+                    "isDefault": true
+                }
+            ],
+            "id": "mirakl-restricted-selling",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "min-shipping-zone",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "min-shipping-zone",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "min-shipping-type",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "min-shipping-type",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "delivery-time-earliest-days",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "delivery-time-earliest-days",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "delivery-time-latest-days",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "delivery-time-latest-days",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "quantity",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "quantity",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "state-code",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "state-code",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "logistic-class",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "logistic-class",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "favorite-rank",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "favorite-rank",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "leadtime-to-ship",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "leadtime-to-ship",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "min-order-quantity",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "min-order-quantity",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "max-order-quantity",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "max-order-quantity",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "package-quantity",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "package-quantity",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "ecotax",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "ecotax",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "gift-wrap",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "gift-wrap",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "min-quantity-ordered",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "min-quantity-ordered",
+            "isVisible": true,
+            "isUnique": true
+        },
+        {
+            "name": "priority",
+            "valueType": "string",
+            "configurable": true,
+            "minCardinality": 0,
+            "maxCardinality": 1,
+            "extensible": true,
+            "productSpecCharacteristicValue": [],
+            "id": "priority",
+            "isVisible": true,
+            "isUnique": true
+        }
+    ],
+    "externalReference": [
+        {
+            "id": "da3681f6-5e0b-45c3-a937-053c5987564b",
+            "name": "mirakl-product-id"
+        }
+    ],
+    "@schemaLocation": "/api/productCatalogManagement/v4/schema/productspecification.json",
+    "isBundle": false
+}
+]

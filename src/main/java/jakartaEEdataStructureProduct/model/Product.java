@@ -1,32 +1,165 @@
 package jakartaEEdataStructureProduct.model;
 
+import java.time.OffsetDateTime;
+import java.util.Objects;
+
+/*
+ *   id VARCHAR(255) PRIMARY KEY,
+    href VARCHAR(255),
+    description TEXT,
+    is_bundle BOOLEAN DEFAULT FALSE,
+    is_customer_visible BOOLEAN DEFAULT TRUE,
+    name VARCHAR(255) NOT NULL,
+    order_date TIMESTAMP WITH TIME ZONE,
+    product_serial_number VARCHAR(255),
+    start_date TIMESTAMP WITH TIME ZONE,
+    termination_date TIMESTAMP WITH TIME ZONE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+ * 
+ */
 public class Product {
-	private String code;
-	private String name;
+private String id ; 
+private String href; 
+private String description; 
+private boolean is_bundle;
+private boolean is_customer_visible;
+private String name;
+private OffsetDateTime order_date;
+private String product_serial_number; 
+private OffsetDateTime start_date;
+private OffsetDateTime termination_date;
 
-	public Product() {
-	}
+public Product() {}
 
-	public String getCode() {
-		return code;
-	}
+public Product(String id, String href, String description, boolean is_bundle, boolean is_customer_visible, String name,
+		OffsetDateTime order_date, String product_serial_number, OffsetDateTime start_date,
+		OffsetDateTime termination_date) {
+	this.id = id;
+	this.href = href;
+	this.description = description;
+	this.is_bundle = is_bundle;
+	this.is_customer_visible = is_customer_visible;
+	this.name = name;
+	this.order_date = order_date;
+	this.product_serial_number = product_serial_number;
+	this.start_date = start_date;
+	this.termination_date = termination_date;
+}
 
-	public void setCode(String code) {
-		this.code = code;
-	}
+public String getId() {
+	return id;
+}
 
-	public String getName() {
-		return name;
-	}
+public void setId(String id) {
+	this.id = id;
+}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+public String getHref() {
+	return href;
+}
 
-	public Product(String code, String name) {
-		this.code = code;
-		this.name = name;
-	}
+public void setHref(String href) {
+	this.href = href;
+}
+
+public String getDescription() {
+	return description;
+}
+
+public void setDescription(String description) {
+	this.description = description;
+}
+
+public boolean isIs_bundle() {
+	return is_bundle;
+}
+
+public void setIs_bundle(boolean is_bundle) {
+	this.is_bundle = is_bundle;
+}
+
+public boolean isIs_customer_visible() {
+	return is_customer_visible;
+}
+
+public void setIs_customer_visible(boolean is_customer_visible) {
+	this.is_customer_visible = is_customer_visible;
+}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public OffsetDateTime getOrder_date() {
+	return order_date;
+}
+
+public void setOrder_date(OffsetDateTime order_date) {
+	this.order_date = order_date;
+}
+
+public String getProduct_serial_number() {
+	return product_serial_number;
+}
+
+public void setProduct_serial_number(String product_serial_number) {
+	this.product_serial_number = product_serial_number;
+}
+
+public OffsetDateTime getStart_date() {
+	return start_date;
+}
+
+public void setStart_date(OffsetDateTime start_date) {
+	this.start_date = start_date;
+}
+
+public OffsetDateTime getTermination_date() {
+	return termination_date;
+}
+
+public void setTermination_date(OffsetDateTime termination_date) {
+	this.termination_date = termination_date;
+}
+
+@Override
+public int hashCode() {
+	return Objects.hash(description, href, id, is_bundle, is_customer_visible, name, order_date, product_serial_number,
+			start_date, termination_date);
+}
+
+@Override
+public boolean equals(Object obj) {
+	if (this == obj)
+		return true;
+	if (obj == null)
+		return false;
+	if (getClass() != obj.getClass())
+		return false;
+	Product other = (Product) obj;
+	return Objects.equals(description, other.description) && Objects.equals(href, other.href)
+			&& Objects.equals(id, other.id) && is_bundle == other.is_bundle
+			&& is_customer_visible == other.is_customer_visible && Objects.equals(name, other.name)
+			&& Objects.equals(order_date, other.order_date)
+			&& Objects.equals(product_serial_number, other.product_serial_number)
+			&& Objects.equals(start_date, other.start_date) && Objects.equals(termination_date, other.termination_date);
+}
+
+@Override
+public String toString() {
+	return "Product [id=" + id + ", href=" + href + ", description=" + description + ", is_bundle=" + is_bundle
+			+ ", is_customer_visible=" + is_customer_visible + ", name=" + name + ", order_date=" + order_date
+			+ ", product_serial_number=" + product_serial_number + ", start_date=" + start_date + ", termination_date="
+			+ termination_date + "]";
+}
+
+
+
+
 	
-
 }

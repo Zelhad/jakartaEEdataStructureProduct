@@ -22,8 +22,8 @@
 	<!-- EXERCISE 4 — Using c:set -->
 	<%
 	ProductArrayListService productService = new ProductArrayListService();
-	List<Product> products = productService.listAllProducts();
-	request.setAttribute("products", products);
+	//List<Product> products = productService.listAllProducts();
+	//request.setAttribute("products", products);
 	%>
 	<table style="">
 		<tr>
